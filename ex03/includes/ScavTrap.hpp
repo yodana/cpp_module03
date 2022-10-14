@@ -3,10 +3,10 @@
 #include <iostream>
 #include "ClapTrap.hpp"
 
-class ScavTrap : public ClapTrap{
+class ScavTrap : virtual public ClapTrap{
     public:
+        ScavTrap();
         ScavTrap(std::string);
-        ScavTrap(void);
         ~ScavTrap(void);
         ScavTrap(ScavTrap const &src);
         ScavTrap & operator=(ScavTrap const & rhs);

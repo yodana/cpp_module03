@@ -1,21 +1,18 @@
 #include "../includes/ClapTrap.hpp"
 #include "../includes/ScavTrap.hpp"
 #include <iostream>
+#include "../includes/FragTrap.hpp"
+#include "../includes/DiamondTrap.hpp"
 
 int main( void ) {
-    ClapTrap a("Clapdana");
-    ScavTrap c;
-    ScavTrap b("Scavdana");
+    DiamondTrap a("Diamonddana");
+    DiamondTrap b;
     a.attack("the corrector");
-    b.attack("the corrector");
     for(int i = 0; i<=10;i++ )
         a.beRepaired(1);
-    for(int i = 0; i<=50;i++ )
-        b.beRepaired(1);
     a.takeDamage(1000);
-    b.takeDamage(1000);
-    b.guardGate();
+    a.highFivesGuys();
     a.attack("the corrector");
-    b.attack("the corrector");
+    a.whoAmI();
     return 0;
 }

@@ -1,6 +1,11 @@
 #include <iostream>
 #include "../includes/ClapTrap.hpp"
 
+ClapTrap::ClapTrap():_name("Default name"),_health(10),_energy(10), _attack(0){
+    std::cout << "ClapTrap " << _name << " is alive!" << std::endl;
+    return ;
+}
+
 ClapTrap::ClapTrap(std::string name):_name(name),_health(10),_energy(10), _attack(0){
     std::cout << "ClapTrap " << name << " is alive!" << std::endl;
     return ;
